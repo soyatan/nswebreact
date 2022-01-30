@@ -1,4 +1,4 @@
-.about {
+.a {
   height: 100vh;
   display: flex;
   align-items: center;
@@ -61,4 +61,24 @@
 .a-award-title {
   font-weight: bold;
   color: #555;
+}
+@media screen and (max-width: 480px) {
+  .a {
+    flex-direction: column;
+    text-align: center;
+    margin-top: 50px;
+  }
+  .a-left {
+    width: 100%;
+  }
+  .a-card {
+    height: 30vh;
+  }
+  .a-card.bg,
+  .a-award {
+    display: none;
+  }
+  .a-right {
+    padding: 20px;
+  }
 }
